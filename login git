@@ -1,0 +1,26 @@
+cd ~/Users/chiobenjamina/Documents/DES SOF/Github
+
+git clone https://github.com/Eduardo666666/REMASA.git
+
+git config --global user.name “chiohaus”git config --global user.email
+$ git config --global user.name "John Doe"
+$ git config --global user.email rocioitzel.g@gmail.com
+
+
+Æ«‘““ææ@@
+ git config --global user.email "rocioitzel.g@gmail.com"
+  git config --global user.name “chiohaus”
+
+
+chiobenjamina@Mac-mini-de-Chio REMASA-1 % git branch "chio/diseño-front-end-botones"
+chiobenjamina@Mac-mini-de-Chio REMASA-1 % git chekout chio/diseño-front-end-botones
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+chiobenjamina@Mac-mini-de-Chio REMASA-1 % git checkout chio/diseño-front-end-botones
+Switched to branch 'chio/diseño-front-end-botones'
+chiobenjamina@Mac-mini-de-Chio REMASA-1 %  git config --global user.email "rocioitzel.g@gmail.com"
+  git config --global user.name “chiohaus”
+chiobenjamina@Mac-mini-de-Chio REMASA-1 % 
+
