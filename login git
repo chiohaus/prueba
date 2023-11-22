@@ -24,3 +24,7 @@ chiobenjamina@Mac-mini-de-Chio REMASA-1 %  git config --global user.email "rocio
   git config --global user.name “chiohaus”
 chiobenjamina@Mac-mini-de-Chio REMASA-1 % 
 
+cd "D:\Documentos\DES SOF\github"
+
+PS D:\Documentos\DES SOF\github\REMASA> git branch "chio/frames"
+PS D:\Documentos\DES SOF\github\REMASA> git checkout chio/frames
