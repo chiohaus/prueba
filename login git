@@ -1,44 +1,42 @@
 
 git clone https://github.com/Eduardo666666/REMASA.git
 
+
+1. cambiarse a rama principal : git checkout main
+2. actualizar la rama main de colaboradores en local : git pull
+3. Ir a rama personal: git checkout
+4. Despues de estar de acuerdo con cambios combinar rama con main: git merge main
+5. commit and push
+----------------------------------------------
+
 LALO
 
+
+------------------------------------
 GABO
 
+
+-------------------------------------
 CHIO
---mac
-
-cd ~/Users/chiobenjamina/Documents/DES SOF/Github
-$ git config --global user.email rocioitzel.g@gmail.com
-
 --pc
 
 http://localhost/phpmyadmin/doc/html/REMASA
 git config --global user.email "rocioitzel.g@gmail.com"
 git config --global user.name “chiohaus”
+PS D:\Documentos\DES SOF\github\REMASA> git checkout chio/frames
 
+--mac
 
-
-
-
-
-
-
-git config --global user.name “chiohaus”git config --global user.email
-$ git config --global user.name "John Doe"
+cd ~/Users/chiobenjamina/Documents/DES SOF/Github
 $ git config --global user.email rocioitzel.g@gmail.com
+chiobenjamina@Mac-mini-de-Chio REMASA-1 % git checkout chio/diseño-front-end-botones
 
- git config --global user.email "rocioitzel.g@gmail.com"
-  git config --global user.name “chiohaus”
+---------------------------------
 
 
 chiobenjamina@Mac-mini-de-Chio REMASA-1 % git branch "chio/diseño-front-end-botones"
-chiobenjamina@Mac-mini-de-Chio REMASA-1 % git checkout chio/diseño-front-end-botones
 git: 'chekout' is not a git command. See 'git --help'.
 
-The most similar command is
-        checkout
-chiobenjamina@Mac-mini-de-Chio REMASA-1 % git checkout chio/diseño-front-end-botones
 Switched to branch 'chio/diseño-front-end-botones'
 chiobenjamina@Mac-mini-de-Chio REMASA-1 %  git config --global user.email "rocioitzel.g@gmail.com"
   git config --global user.name “chiohaus”
@@ -47,7 +45,6 @@ chiobenjamina@Mac-mini-de-Chio REMASA-1 %
 cd "D:\Documentos\DES SOF\github"
 
 PS D:\Documentos\DES SOF\github\REMASA> git branch "chio/frames"
-PS D:\Documentos\DES SOF\github\REMASA> git checkout chio/frames
 
 como fusionar cambios
 ir a https://github.com/Eduardo666666/REMASA/pulls 
@@ -55,9 +52,3 @@ si aun no esta creado el pull request crearlo sobre la rama que se esta trabajan
 si ya esta creado abrir el pull request
 
 
-1. cambiarse a rama principal : git checkout main
-2. actualizar la rama main en local : git pull - actualizar cambios de integrantes en el main
-3. chiobenjamina@Mac-mini-de-Chio REMASA-1 % git checkout chio/diseño-front-end-botones
-PS D:\Documentos\DES SOF\github\REMASA> git checkout chio/frames
-4. Despues de estar de acuerdo con cambios combinar rama con main: git merge main
-5. commit and push
