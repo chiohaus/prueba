@@ -1,9 +1,28 @@
-cd ~/Users/chiobenjamina/Documents/DES SOF/Github
-
-http://localhost/phpmyadmin/doc/html/REMASA
-
 
 git clone https://github.com/Eduardo666666/REMASA.git
+
+LALO
+
+GABO
+
+CHIO
+--mac
+
+cd ~/Users/chiobenjamina/Documents/DES SOF/Github
+$ git config --global user.email rocioitzel.g@gmail.com
+
+--pc
+
+http://localhost/phpmyadmin/doc/html/REMASA
+git config --global user.email "rocioitzel.g@gmail.com"
+git config --global user.name “chiohaus”
+
+
+
+
+
+
+
 
 git config --global user.name “chiohaus”git config --global user.email
 $ git config --global user.name "John Doe"
