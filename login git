@@ -28,3 +28,13 @@ cd "D:\Documentos\DES SOF\github"
 
 PS D:\Documentos\DES SOF\github\REMASA> git branch "chio/frames"
 PS D:\Documentos\DES SOF\github\REMASA> git checkout chio/frames
+
+como fusionar cambios
+ir a https://github.com/Eduardo666666/REMASA/pulls 
+si aun no esta creado el pull request crearlo sobre la rama que se esta trabajando
+siya esta creado abrir el pull request
+
+git checkout
+cambiarse a rama principal : git checkout main
+actualizar la rama main en local : git pull
+combinar rama con main: git merge main
