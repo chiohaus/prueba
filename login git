@@ -1,5 +1,8 @@
 cd ~/Users/chiobenjamina/Documents/DES SOF/Github
 
+http://localhost/phpmyadmin/doc/html/REMASA
+
+
 git clone https://github.com/Eduardo666666/REMASA.git
 
 git config --global user.name “chiohaus”git config --global user.email
