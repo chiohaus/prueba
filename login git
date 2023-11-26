@@ -23,7 +23,7 @@ CHIO
 http://localhost/phpmyadmin/doc/html/REMASA
 git config --global user.email "rocioitzel.g@gmail.com"
 git config --global user.name “chiohaus”
-PS D:\Documentos\DES SOF\github\REMASA> git checkout chio/frames
+PS D:\Documentos\DES SOF\github\REMASA> git checkout chio/design
 
 --mac
 
