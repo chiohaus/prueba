@@ -57,7 +57,7 @@ si ya esta creado abrir el pull request
 git checkou main
 git pull
 git checkout  chio/updates
-EDUARDO ARTURO GUTIERREZ HERNANDEZ14:14
+
 .................................
 despues de cambios hacer un commit and push
 crear el pull request
@@ -69,6 +69,19 @@ EDUARDO ARTURO GUTIERREZ HERNANDEZ14:16
 ----------------git checkout main
 git pilll
 regresarse a la rama que estan trabajando y darle git merge main
+
+
+eliminar rama
+git checkout main
+git pull
+
+eliminar
+git branch -d chio/design
+
+para crear una rama
+checkout main
+git branch "nmbreRama"
+git checkout "nueva rama"
 
 
 
