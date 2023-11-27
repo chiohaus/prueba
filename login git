@@ -52,3 +52,25 @@ si aun no esta creado el pull request crearlo sobre la rama que se esta trabajan
 si ya esta creado abrir el pull request
 
 
+
+
+git checkou main
+git pull
+git checkout  chio/updates
+EDUARDO ARTURO GUTIERREZ HERNANDEZ14:14
+.................................
+despues de cambios hacer un commit and push
+crear el pull request
+en la pagina web de git hub
+EDUARDO ARTURO GUTIERREZ HERNANDEZ14:15
+desde la pagina de git hub hacer el merge dandole click en el boton
+despues de esto todos deben descargar los cambios
+EDUARDO ARTURO GUTIERREZ HERNANDEZ14:16
+----------------git checkout main
+git pilll
+regresarse a la rama que estan trabajando y darle git merge main
+
+
+
+
+
