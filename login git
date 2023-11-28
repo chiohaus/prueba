@@ -7,6 +7,9 @@ git clone https://github.com/Eduardo666666/REMASA.git
 3. Ir a rama personal: git checkout
 4. Despues de estar de acuerdo con cambios combinar rama con main: git merge main
 5. commit and push
+
+
+
 ----------------------------------------------
 
 LALO
