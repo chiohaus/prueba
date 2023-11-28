@@ -80,3 +80,31 @@ CREATE TABLE IF NOT EXISTS `venta` (
   PRIMARY KEY (`idventa`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+
+
+
+DROP TABLE IF EXISTS `producto`;
+CREATE TABLE IF NOT EXISTS `producto` (
+  `cantidad` int NOT NULL,
+  `descripcion` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `id` int NOT NULL,
+  `medida` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `nombre` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `precio` decimal(10,0) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+
+INSERT INTO `producto` (`cantidad`, `descripcion`, `id`, `medida`, `nombre`, `precio`) VALUES
+(14, 'Frenos', 11450, '8cm', 'Manita de acople', '128'),
+(5, 'Frenos', 113120, '60 cm', 'Manguera', '638'),
+(3, 'Miscelaneos', 20321201, '60x30 cm', 'Tanque multego', '3016'),
+(30, 'Torno - M. Benz', 360, '4.5 cm', 'Rodillo perno', '264'),
+(22, 'Suspensión - Volvo 7550', 31546, '5 cm', 'Granada puntas barra estabiliz', '580'),
+(50, 'Frenos', 342, '4.5 cm', 'Rodillo perno', '264'),
+(10, 'Dirección - Volvo 9700', 22015, '20 cm', 'Cruceta', '1276'),
+(14, 'Filtro aceite', 816, '10 cm diámetro - 24 ', 'FLP-816', '174'),
+(13, 'Lubricante', 30002, '4 litros', 'Lucas - Estabilizador de aceit', '829'),
+(22, 'Suspensión - Volvo', 1135080, '5 cm', 'Buje canilla', '551'),
+(20, 'Lubricante', 30013, '4 litros', 'Lucas - Tratamiento combinado', '777');
