@@ -1,0 +1,37 @@
+
+git clone https://github.com/Eduardo666666/REMASA.git
+
+_________________________________________________________
+PASOS PARA HACER PULL REQUEST
+
+1. Despues de hacer cambios hacer un commit and push en Visual Studio
+2. En la pagina web de git hub crear el pull request
+3. Desde la pagina de git hub hacer el merge dandole click en el boton
+4. Cuando una persona hizo los pasos anteriores, los demas pueden descargar los cambios. 
+___________________________________________________________
+
+PASOS PARA DESCARGAR CAMBIOS EN SUS RAMAS
+
+1. Cambiarse a rama principal : git checkout main
+2. Actualizar la rama main de colaboradores en local : git pull
+3. Ir a rama personal: git checkout
+4. Despues de estar de acuerdo con cambios combinar rama con main: git merge main
+5. Sync
+____________________________________________________________
+
+ELIMINA RAMA
+ git checkout main
+ git pull
+
+3. eliminar git branch -d chio/design
+________________________________________________________________
+
+CREAR RAMA
+checkout main
+git branch "nmbreRama"
+git checkout "nueva rama"
+
+__________________________________________________________________
+
+
+
