@@ -1,25 +1,55 @@
 
 git clone https://github.com/Eduardo666666/REMASA.git
 
+_________________________________________________________
+PASOS PARA HACER PULL REQUEST
 
-1. cambiarse a rama principal : git checkout main
-2. actualizar la rama main de colaboradores en local : git pull
+1. Despues de hacer cambios hacer un commit and push en Visual Studio
+2. En la pagina web de git hub crear el pull request
+3. Desde la pagina de git hub hacer el merge dandole click en el boton
+4. Cuando una persona hizo los pasos anteriores, los demas pueden descargar los cambios. 
+___________________________________________________________
+
+PASOS PARA DESCARGAR CAMBIOS EN SUS RAMAS
+
+1. Cambiarse a rama principal : git checkout main
+2. Actualizar la rama main de colaboradores en local : git pull
 3. Ir a rama personal: git checkout
 4. Despues de estar de acuerdo con cambios combinar rama con main: git merge main
-5. commit and push
+5. Sync
+____________________________________________________________
 
+ELIMINA RAMA
+ git checkout main
+ git pull
+
+3. eliminar git branch -d chio/design
+________________________________________________________________
+
+CREAR RAMA
+checkout main
+git branch "nmbreRama"
+git checkout "nueva rama"
+
+__________________________________________________________________
+
+
+
+
+
+
+----------------git checkout main
+git pull
+regresarse a la rama que estan trabajando y darle git merge main
+
+como fusionar cambios
+ir a https://github.com/Eduardo666666/REMASA/pulls 
+si aun no esta creado el pull request crearlo sobre la rama que se esta trabajando
+si ya esta creado abrir el pull request
 
 
 ----------------------------------------------
 
-LALO
-
-
-------------------------------------
-GABO
-
-
--------------------------------------
 CHIO
 --pc
 
@@ -49,44 +79,10 @@ cd "D:\Documentos\DES SOF\github"
 
 PS D:\Documentos\DES SOF\github\REMASA> git branch "chio/frames"
 
-como fusionar cambios
-ir a https://github.com/Eduardo666666/REMASA/pulls 
-si aun no esta creado el pull request crearlo sobre la rama que se esta trabajando
-si ya esta creado abrir el pull request
-
-
-
 
 git checkou main
 git pull
 git checkout  chio/updates
 
 .................................
-despues de cambios hacer un commit and push
-crear el pull request
-en la pagina web de git hub
-
-desde la pagina de git hub hacer el merge dandole click en el boton
-despues de esto todos deben descargar los cambios
-
-----------------git checkout main
-git pull
-regresarse a la rama que estan trabajando y darle git merge main
-
-
-eliminar rama
-git checkout main
-git pull
-
-eliminar
-git branch -d chio/design
-
-para crear una rama
-checkout main
-git branch "nmbreRama"
-git checkout "nueva rama"
-
-
-
-
 
