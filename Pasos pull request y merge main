@@ -28,8 +28,8 @@ ________________________________________________________________
 
 CREAR RAMA
 checkout main
-git branch "nmbreRama"
-git checkout "nueva rama"
+git branch "nuevaRama"
+git checkout "nuevaRama"
 
 __________________________________________________________________
 
