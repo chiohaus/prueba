@@ -155,8 +155,8 @@ INSERT INTO `producto` (`cantidad`, `descripcion`, `id`, `medida`, `nombre`, `pr
 (25, 'Juego completo de piezas de metal para el perno', 7897, '10 x 15 cms', 'Juego perno', 56, 'Scania', 'assets/img/productos/juegoperno.jpg');
 
 
-
-CREATE TABLE `usuario` (
+DROP TABLE IF EXISTS `usuario`;
+CREATE TABLE IF NOT EXISTS `usuario` (
   `apellidos` varchar(30) NOT NULL,
   `ciudad` varchar(20) NOT NULL,
   `codigopostal` int(11) NOT NULL,
@@ -165,7 +165,7 @@ CREATE TABLE `usuario` (
   `direccion` varchar(50) NOT NULL,
   `estado` varchar(30) NOT NULL,
   `nombre` varchar(30) NOT NULL,
-  `telefono` int(11) NOT NULL,
+  `telefono` double(11) NOT NULL,
   `tipousuario` varchar(20) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -174,8 +174,8 @@ INSERT INTO `usuario` (`apellidos`, `ciudad`, `codigopostal`, `contrasena`, `cor
 ('Gutierrez', 'Guadalajara', 44100, '789', 'cliente@gmail.com', 'C. Independencia', 'Jalisco', 'Gabriel', 2147483647, 'cliente');
 
 
-
-CREATE TABLE `vendedor` (
+DROP TABLE IF EXISTS `vendedor`;
+CREATE TABLE IF NOT EXISTS `vendedor` (
   `apellido` varchar(30) NOT NULL,
   `nombre` varchar(30) NOT NULL,
   `correo` varchar(50) NOT NULL,
@@ -190,6 +190,118 @@ INSERT INTO `vendedor` (`apellido`, `nombre`, `correo`, `contrasena`, `estatus`)
 
 
 CREATE TABLE `venta` (
+  `idventa` int(11) NOT NULL,
+  `preciototal` int(11) NOT NULL,
+  `fecha` datetime(6) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+ALTER TABLE `detalleventa`
+  ADD PRIMARY KEY (`idventa`);
+
+
+ALTER TABLE `producto`
+  ADD PRIMARY KEY (`id`);
+
+
+ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`correo`);
+
+
+ALTER TABLE `vendedor`
+  ADD PRIMARY KEY (`correo`);
+
+
+ALTER TABLE `venta`
+  ADD PRIMARY KEY (`idventa`);
+
+
+________________________________________________________________________
+
+
+
+DROP TABLE IF EXISTS `detalleventa`;
+CREATE TABLE IF NOT EXISTS `detalleventa` (
+  `idventa` int(11) NOT NULL,
+  `idproducto` int(11) NOT NULL,
+  `cantidad` int(11) NOT NULL,
+  `descripcion` varchar(50) NOT NULL,
+  `preciototal` int(11) NOT NULL,
+  `preciounitario` int(11) NOT NULL,
+  `idusuario` int(10) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO `detalleventa` (`idventa`, `idproducto`, `cantidad`, `descripcion`, `preciototal`, `preciounitario`, `idusuario`) VALUES
+(15, 11450, 1, 'Frenos', 127, 127, 0);
+
+
+
+DROP TABLE IF EXISTS `producto`;
+CREATE TABLE IF NOT EXISTS `producto` (
+  `cantidad` int(11) NOT NULL,
+  `descripcion` varchar(50) NOT NULL,
+  `id` int(11) NOT NULL,
+  `medida` varchar(20) NOT NULL,
+  `nombre` varchar(30) NOT NULL,
+  `precio` decimal(10,0) NOT NULL,
+  `marca` varchar(30) NOT NULL,
+  `rutaimagen` varchar(80) NOT NULL,
+  `categoria` varchar(30) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+
+INSERT INTO `producto` (`cantidad`, `descripcion`, `id`, `medida`, `nombre`, `precio`, `marca`, `rutaimagen`, `categoria`) VALUES
+(14, 'Frenos', 11450, '8cm', 'Manita de acople', 128, 'Mercedes-Benz', 'assets/img/productos/manitadeacople.jpg', 'Frenos'),
+(5, 'Frenos', 113120, '60 cm', 'Manguera', 638, 'Mercedes-Benz', 'assets/img/productos/manguera.jpg', 'Frenos'),
+(3, 'Miscelaneos', 20321201, '60x30 cm', 'Tanque multego', 3016, 'Mercedes-Benz', 'assets/img/productos/tanquemultego.jpg', 'Filtracion'),
+(30, 'Torno - M. Benz', 360, '4.5 cm', 'Rodillo perno', 264, 'MAN', 'assets/img/productos/rodilloperno.jpg', 'Conecciones'),
+(22, 'Suspensión - Volvo 7550', 31546, '5 cm', 'Granada puntas barra estabiliz', 580, 'MAN', 'assets/img/productos/granadapuntasbarra.jpg', 'Suspencion'),
+(50, 'Frenos', 342, '4.5 cm', 'Torno zapata', 264, 'Scania', 'assets/img/productos/tornozapata.jpg', 'Frenos'),
+(10, 'Dirección - Volvo 9700', 22015, '20 cm', 'Cruceta', 1276, 'Scania', 'assets/img/productos/cruceta.jpg', 'Direccion'),
+(14, 'Filtro aceite', 816, '10 cm diámetro - 24 ', 'FLP-816', 174, 'MAN', 'assets/img/productos/filtroflp.jpg', 'Filtracion'),
+(13, 'Lubricante', 30002, '4 litros', 'Lucas - Estabilizador de aceit', 829, 'Volvo', 'assets/img/productos/estabilizadordeaceite.jpg', 'Lubricantes'),
+(22, 'Suspensión - Volvo', 1135080, '5 cm', 'Buje canilla', 551, 'Volvo', 'assets/img/productos/bujecanilla.jpg', 'Suspencion'),
+(20, 'Lubricante', 30013, '4 litros', 'Lucas - Tratamiento combinado', 777, 'Volvo', 'assets/img/productos/tratamientocombinado.jpg', 'Lubricantes'),
+(25, 'Juego completo de piezas de metal para el perno', 7897, '10 x 15 cms', 'Juego perno', 56, 'Scania', 'assets/img/productos/juegoperno.jpg', 'Conecciones');
+
+
+
+DROP TABLE IF EXISTS `usuario`;
+CREATE TABLE IF NOT EXISTS `usuario` (
+  `apellidos` varchar(30) NOT NULL,
+  `ciudad` varchar(20) NOT NULL,
+  `codigopostal` int(11) NOT NULL,
+  `contrasena` varchar(30) NOT NULL,
+  `correo` varchar(50) NOT NULL,
+  `direccion` varchar(50) NOT NULL,
+  `estado` varchar(30) NOT NULL,
+  `nombre` varchar(30) NOT NULL,
+  `telefono` int(11) NOT NULL,
+  `tipousuario` varchar(20) NOT NULL,
+  `idusuario` int(10) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+INSERT INTO `usuario` (`apellidos`, `ciudad`, `codigopostal`, `contrasena`, `correo`, `direccion`, `estado`, `nombre`, `telefono`, `tipousuario`, `idusuario`) VALUES
+('Gutierrez', 'Guadalajara', 44100, '789', 'cliente@gmail.com', 'C. Independencia', 'Jalisco', 'Gabriel', 2147483647, 'cliente', 0);
+
+DROP TABLE IF EXISTS `vendedor`;
+CREATE TABLE IF NOT EXISTS `vendedor` (
+  `apellido` varchar(30) NOT NULL,
+  `nombre` varchar(30) NOT NULL,
+  `correo` varchar(50) NOT NULL,
+  `contrasena` varchar(20) NOT NULL,
+  `estatus` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+INSERT INTO `vendedor` (`apellido`, `nombre`, `correo`, `contrasena`, `estatus`) VALUES
+('Gutierrez', 'Gabriel', 'gabo@remasa.com', '12345', 1);
+
+
+DROP TABLE IF EXISTS `venta`;
+CREATE TABLE IF NOT EXISTS `venta` (
   `idventa` int(11) NOT NULL,
   `preciototal` int(11) NOT NULL,
   `fecha` datetime(6) NOT NULL
