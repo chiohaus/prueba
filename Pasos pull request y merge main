@@ -1,6 +1,10 @@
 
 git clone https://github.com/Eduardo666666/REMASA.git
 
+SI UNA PERSONA SUBE CAMBIOS, TODOS HACEN COMMIT AND PUSH
+ git pull
+git merge main
+
 _________________________________________________________
 PASOS PARA HACER PULL REQUEST
 
