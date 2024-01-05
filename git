@@ -12,3 +12,6 @@ salir a una carpeta arriba
 git config --global user.name "Chio"
 git config --global user.email 2122100588@soy.utj.edu.mx
 git config --list
+
+exit
+salir
