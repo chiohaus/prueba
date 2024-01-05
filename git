@@ -1,0 +1,14 @@
+ls 
+muestra directorio
+ls -l
+muestra detalles
+pwd 
+directorio actual
+cd
+cambiar de directorio
+cd..
+salir a una carpeta arriba
+
+git config --global user.name "Chio"
+git config --global user.email 2122100588@soy.utj.edu.mx
+git config --list
